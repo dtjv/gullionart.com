@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../layout"
+import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 export default () => {
@@ -31,6 +32,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO />
       <div className="px-4 py-8 md:px-12">
         <div className="flex flex-col lg:flex-row">
           <div className="w-full lg:w-1/2">

@@ -10,6 +10,7 @@ const SEO = ({ description, lang, meta = [], title }) => {
           siteMetadata {
             title
             description
+            siteUrl
           }
         }
       }
@@ -17,10 +18,11 @@ const SEO = ({ description, lang, meta = [], title }) => {
   )
   const pageDescription = description || site.siteMetadata.description
   const pageTitle = title || site.siteMetadata.title
+  const pageLanguage = lang || "en-US"
 
   return (
     <Helmet
-      htmlAttributes={{ lang }}
+      htmlAttributes={{ pageLanguage }}
       title={pageTitle}
       meta={[
         {
@@ -35,10 +37,10 @@ const SEO = ({ description, lang, meta = [], title }) => {
           property: `og:description`,
           content: pageDescription,
         },
-        //{
-        //property: `og:url`,
-        //content: site.siteMetadata.siteUrl,
-        //},
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
         {
           property: `og:type`,
           content: `website`,
@@ -50,4 +52,4 @@ const SEO = ({ description, lang, meta = [], title }) => {
   )
 }
 
-export { SEO }
+export default SEO

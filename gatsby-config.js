@@ -5,7 +5,7 @@ module.exports = {
       name: "Rich Gullion",
     },
     description: "Rich Gullion - Artist",
-    siteUrl: "http://richardgullionart.com/",
+    siteUrl: "https://rich-gullion.netlify.app/",
   },
   plugins: [
     {

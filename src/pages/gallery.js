@@ -2,6 +2,7 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import Layout from "../layout"
+import SEO from "../components/seo"
 
 export default () => {
   const artworkQuery = graphql`
@@ -31,6 +32,7 @@ export default () => {
 
   return (
     <Layout>
+      <SEO />
       <div className="px-4 py-8 md:px-12">
         <div>
           <h1 className="text-5xl font-bold">Welcome...</h1>
