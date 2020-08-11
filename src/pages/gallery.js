@@ -52,7 +52,11 @@ export default () => {
               const filename = `${image.node.base.split(`.`)[0]}`
 
               return (
-                <Link to={`/${filename}`} key={filename}>
+                <Link
+                  to={`/${filename}`}
+                  key={filename}
+                  aria-label={`go to detail of artwork ${filename}`}
+                >
                   <Img
                     fluid={image.node.childImageSharp.fluid}
                     alt={filename}

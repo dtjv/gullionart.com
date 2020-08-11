@@ -18,7 +18,7 @@ const Nav = () => {
   return (
     <div className="flex items-center justify-between p-4 md:p-8">
       <div>
-        <Link to="/">
+        <Link to="/" aria-label="go to home page">
           <Img
             fluid={data.file.childImageSharp.fluid}
             alt="artist initials"
@@ -29,6 +29,7 @@ const Nav = () => {
       <div className="flex items-center">
         <Link
           to="/gallery"
+          aria-label="go to gallery page"
           className="px-3 py-2 rounded hover:text-purple-700"
           activeClassName="font-bold text-purple-700"
         >
@@ -36,6 +37,7 @@ const Nav = () => {
         </Link>
         <Link
           to="/about"
+          aria-label="go to about page"
           className="px-3 py-2 rounded hover:text-purple-700"
           activeClassName="font-bold text-purple-700"
         >
@@ -45,6 +47,7 @@ const Nav = () => {
           <a
             href="https://www.facebook.com/richard.gullion.35"
             className="block p-2 text-gray-800 hover:text-purple-700"
+            aria-label="go to richards facebook page"
           >
             <svg
               className="w-8 h-8"
