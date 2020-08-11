@@ -1,13 +1,29 @@
 import React from "react"
-import { Link } from "gatsby"
-import LogoImg from "../images/logo.png"
+import { Link, graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const Nav = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "logo.png" }) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <div className="flex items-center justify-between p-4 md:p-8">
       <div>
         <Link to="/">
-          <img src={LogoImg} className="w-10 h-10" alt="artist initials" />
+          <Img
+            fluid={data.file.childImageSharp.fluid}
+            alt="artist initials"
+            className="w-10 h-10"
+          />
         </Link>
       </div>
       <div className="flex items-center">
