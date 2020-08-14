@@ -4,7 +4,7 @@ Website for Rich Gullion, running Gatsby, React and Tailwind CSS. ([live demo](h
 
 <br>
 
-![website screenshot](./media/screenshot.png)
+![website screenshots](./media/screen-shots.png)
 
 <br>
 
