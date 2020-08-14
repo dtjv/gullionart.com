@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const Nav = () => {
+const Nav = props => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo.png" }) {
@@ -16,7 +16,9 @@ const Nav = () => {
   `)
 
   return (
-    <div className="flex items-center justify-between p-4 md:p-8">
+    <div
+      className={`${props.classes} flex items-center justify-between p-4 md:p-8`}
+    >
       <div>
         <Link to="/" aria-label="go to home page">
           <Img
