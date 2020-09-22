@@ -1,8 +1,8 @@
-import React from "react"
-import { graphql } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../layout"
-import SEO from "../components/seo"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from '../layout'
+import SEO from '../components/seo'
 
 export default ({ data, pageContext }) => {
   const { artPiece } = pageContext
@@ -26,7 +26,7 @@ export default ({ data, pageContext }) => {
               <p className="mt-6 lg:text-xl">
                 <span className="text-base font-bold tracking-wide text-purple-700 uppercase">
                   medium:
-                </span>{" "}
+                </span>{' '}
                 <span className="text-gray-700">
                   {artPiece.medium} on {artPiece.substrate}
                 </span>
@@ -34,7 +34,7 @@ export default ({ data, pageContext }) => {
               <p className="mt-2 lg:mt-2 lg:text-xl">
                 <span className="text-base font-bold tracking-wide text-purple-700 uppercase">
                   size:
-                </span>{" "}
+                </span>{' '}
                 <span className="text-gray-700">
                   {artPiece.width} x {artPiece.height} ({artPiece.size_units})
                 </span>
@@ -42,19 +42,19 @@ export default ({ data, pageContext }) => {
               <p className="mt-2 lg:mt-2 lg:text-xl">
                 <span className="text-base font-bold tracking-wide text-purple-700 uppercase">
                   created:
-                </span>{" "}
+                </span>{' '}
                 <span className="text-gray-700">{artPiece.create_date}</span>
               </p>
               <p className="mt-2 lg:mt-2 lg:text-xl">
                 <span className="text-base font-bold tracking-wide text-purple-700 uppercase">
                   price:
-                </span>{" "}
+                </span>{' '}
                 <span className="text-gray-700">${artPiece.price}</span>
               </p>
               <p className="mt-2 lg:mt-2 lg:text-xl">
                 <span className="text-base font-bold tracking-wide text-purple-700 uppercase">
                   status:
-                </span>{" "}
+                </span>{' '}
                 <span className="text-gray-700">{artPiece.status}</span>
               </p>
             </div>

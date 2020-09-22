@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../layout"
-import SEO from "../components/seo"
-import Img from "gatsby-image"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Layout from '../layout'
+import SEO from '../components/seo'
+import Img from 'gatsby-image'
 
 export default () => {
   const imageQuery = graphql`
@@ -91,7 +91,7 @@ export default () => {
           </div>
           <div className="w-full lg:w-1/2">
             <div className="pt-8 lg:pt-0">
-              {images.map(image => (
+              {images.map((image) => (
                 <Img
                   key={image.node.base.split(`.`)[0]}
                   fluid={image.node.childImageSharp.fluid}

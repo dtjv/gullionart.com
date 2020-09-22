@@ -1,8 +1,8 @@
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import Layout from "../layout"
-import SEO from "../components/seo"
+import React from 'react'
+import { Link, useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import Layout from '../layout'
+import SEO from '../components/seo'
 
 export default () => {
   const artworkQuery = graphql`
@@ -48,7 +48,7 @@ export default () => {
         </div>
         <div>
           <div className="gallery">
-            {images.map(image => {
+            {images.map((image) => {
               const filename = `${image.node.base.split(`.`)[0]}`
 
               return (

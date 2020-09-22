@@ -1,4 +1,16 @@
-.cache
-package.json
-package-lock.json
-public
+.DS_Store
+
+# dependencies
+node_modules/
+
+# environment
+.env*
+
+# build
+.cache/
+public/
+
+# errors
+*.log
+yarn-*
+.yarn-integrity

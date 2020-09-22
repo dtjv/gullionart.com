@@ -1,8 +1,8 @@
-import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 
-const Nav = props => {
+const Nav = (props) => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: { eq: "logo.png" }) {

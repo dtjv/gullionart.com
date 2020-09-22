@@ -1,11 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Rich Gullion",
+    title: 'Rich Gullion',
     author: {
-      name: "Rich Gullion",
+      name: 'Rich Gullion',
     },
-    description: "Rich Gullion - Artist",
-    siteUrl: "https://rich-gullion.netlify.app/",
+    description: 'Rich Gullion - Artist',
+    siteUrl: 'https://rich-gullion.netlify.app/',
   },
   plugins: [
     {
@@ -23,9 +23,9 @@ module.exports = {
       resolve: `gatsby-plugin-postcss`,
       options: {
         postCssPlugins: [
-          require("postcss-import"),
-          require("tailwindcss"),
-          require("autoprefixer"),
+          require('postcss-import'),
+          require('tailwindcss'),
+          require('autoprefixer'),
         ],
       },
     },
@@ -36,8 +36,8 @@ module.exports = {
         short_name: `Rich Gullion`,
         description: `Artist`,
         start_url: `/`,
-        background_color: "white",
-        theme_color: "white",
+        background_color: 'white',
+        theme_color: 'white',
         display: `minimal-ui`,
         icon: `static/logo.png`,
       },

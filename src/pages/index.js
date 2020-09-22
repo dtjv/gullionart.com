@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import Nav from "../components/nav"
-import SEO from "../components/seo"
-import Img from "gatsby-image"
+import React from 'react'
+import { useStaticQuery, graphql, Link } from 'gatsby'
+import Nav from '../components/nav'
+import SEO from '../components/seo'
+import Img from 'gatsby-image'
 
 export default () => {
   const data = useStaticQuery(graphql`

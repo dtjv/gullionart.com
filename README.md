@@ -1,12 +1,8 @@
-# rg-website
+# Rich Gullion
 
-Website for Rich Gullion, running Gatsby, React and Tailwind CSS. ([live demo](https://rich-gullion.netlify.app))
-
-<br>
+A website for Rich Gullion. Runs Gatsby, React and Tailwind CSS. ([live demo](https://rich-gullion.netlify.app))
 
 ![website screenshots](./media/screen-shots.png)
-
-<br>
 
 ## License
 
