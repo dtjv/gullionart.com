@@ -52,7 +52,7 @@ const Nav = (props) => {
             aria-label="go to richards facebook page"
           >
             <svg
-              className="w-8 h-8"
+              className="w-6 h-6"
               fill="currentColor"
               role="img"
               viewBox="0 0 24 24"

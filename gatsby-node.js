@@ -6,7 +6,7 @@ exports.createPages = async ({ actions }) => {
 
   artwork.forEach((artPiece) => {
     createPage({
-      path: `/${artPiece.slug}/`,
+      path: `/gallery/${artPiece.slug}/`,
       component: path.resolve('src/templates/detail.js'),
       context: {
         artPiece,

@@ -60,7 +60,7 @@ export default () => {
                 <Link
                   to="gallery"
                   aria-label="go to gallery page"
-                  className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold bg-teal-400 border border-transparent leading-6 rounded-md shadow-sm focus:outline-none focus:text-gray-600 transition ease-in-out duration-150 hover:bg-teal-300"
+                  className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-purple-700 border border-transparent leading-6 rounded-md shadow-sm focus:outline-none focus:text-gray-600 transition ease-in-out duration-150 hover:bg-purple-500"
                 >
                   View Gallery
                 </Link>

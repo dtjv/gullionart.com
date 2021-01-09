@@ -34,9 +34,9 @@ export default () => {
     <Layout>
       <SEO />
       <div className="px-4 py-8 md:px-12">
-        <div>
-          <h1 className="text-5xl font-bold">Welcome...</h1>
-          <p className="mt-2 mb-10 lg:text-xl">
+        <div className="max-w-full mb-8 prose">
+          <h1>Welcome...</h1>
+          <p>
             Through my art, I tell stories and portray scenes that reflect
             thoughts and feelings. I call this "visual literacy,” and it leaves
             the pieces open to the viewers’ interpretation. While my intention
@@ -53,7 +53,7 @@ export default () => {
 
               return (
                 <Link
-                  to={`/${filename}`}
+                  to={`/gallery/${filename}`}
                   key={filename}
                   aria-label={`go to detail of artwork ${filename}`}
                 >

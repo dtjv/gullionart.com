@@ -5,28 +5,19 @@ module.exports = {
       name: 'Rich Gullion',
     },
     description: 'Rich Gullion - Artist',
-    siteUrl: 'https://rich-gullion.netlify.app/',
+    siteUrl: 'https://gullionart.com/',
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
-    {
-      resolve: `gatsby-plugin-postcss`,
-      options: {
-        postCssPlugins: [
-          require('postcss-import'),
-          require('tailwindcss'),
-          require('autoprefixer'),
-        ],
       },
     },
     {

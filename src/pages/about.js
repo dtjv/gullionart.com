@@ -35,21 +35,21 @@ export default () => {
       <SEO />
       <div className="px-4 py-8 md:px-12">
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:w-1/2">
-            <div className="lg:pr-8">
-              <h1 className="text-5xl font-bold">My Story</h1>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+          <div className="w-full lg:pr-6 lg:w-1/2">
+            <div className="prose">
+              <h1>My Story</h1>
+              <p>
                 I graduated in 1968 from Willow Glen High School, where I
                 studied mechanical and architectural drawing. My love of art has
                 been lifelong, and these classes provided the opportunity to
                 improve my skills.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+              <p>
                 After high school, I lived and worked in Hawaii until I was
                 drafted in April of 1969. Luckily, I was stationed at Fort Ord,
                 close to home and family.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+              <p>
                 On my 20th birthday, I received orders to go to Vietnam, which
                 was to be a defining moment in my life, one that still
                 influences my art and perception of the world. While there, I
@@ -58,7 +58,7 @@ export default () => {
                 got stolen about 10 months into my tour, a heartbreaking loss I
                 still feel today.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+              <p>
                 Fighting overseas with my fellow soldiers, experiencing the
                 stark and immediate juxtaposition of life and death that is war,
                 heightened our appreciation of life. Through our shared
@@ -66,25 +66,25 @@ export default () => {
                 brothers. This time in my life still influences my art to this
                 day.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+              <p>
                 In the intervening years, while continuing to make my own art, I
                 had the opportunity to help budding young artists develop their
                 skills as an art and photography teacher at Independence High
                 School. Nurturing artistic expression in young people has been
                 an important and fulfilling part of my artistic journey.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+              <p>
                 My art is a reflection of a lifetime of experiences, making it
                 deeply personal, but at the same time, open to interpretation by
                 the viewer. While it’s based on my life, I hope it touches the
                 lives of my audience and resonates with them.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">
+              <p>
                 If you have questions about my art or would like to visit my
                 studio, please contact me.
               </p>
-              <p className="mt-2 lg:mt-6 lg:text-xl">Sincerely,</p>
-              <p className="lg:text-xl">
+              <p>Sincerely,</p>
+              <p>
                 <strong> Richard Gullion </strong>
               </p>
             </div>
