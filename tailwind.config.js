@@ -2,6 +2,7 @@ const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
   purge: ['./src/**/*.js'],
+  darkMode: false,
   theme: {
     extend: {
       fontFamily: {
@@ -12,8 +13,5 @@ module.exports = {
   variants: {
     margin: ['responsive', 'first'],
   },
-  plugins: [
-    require('@tailwindcss/custom-forms'),
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 }
