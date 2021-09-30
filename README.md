@@ -1,9 +1,16 @@
-# [Rich Gullion](https://gullionart.com)
+# gullionart.com
 
-A website for Rich Gullion. Runs Gatsby, React and Tailwind CSS.
+A website for my friend, Rich Gullion.
+
+### [View website](https://gullionart.com)
 
 ![website screenshots](./media/screen-shots.png)
 
-## License
+## Technology
 
-[MIT license](LICENSE).
+- [Gatsby](https://www.gatsbyjs.com)
+- [Tailwind CSS](https://tailwindcss.com)
+
+## Author
+
+- [David Valles](https://dtjv.io)
